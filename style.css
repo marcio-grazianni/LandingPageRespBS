@@ -7,9 +7,14 @@
     text-decoration: none;
 }
 
+:root {
+    --cor-marrom-escuro: #2F2325;
+    --cor-marrom-claro: #8E5D52;
+    --cor-azul-claro: #6495ed;
+}
 body {
     font-size: 100%;
-    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background: linear-gradient(68.15deg, var(--cor-marrom-escuro) 16.62%, var(--cor-marrom-claro) 85.61%);
 }
 
 link {
@@ -24,12 +29,16 @@ img {
 hr {
     width: 15rem;
     margin: 1rem auto;
-    color: #FFFFFF !important;
+    color: white !important;
     opacity: unset !important;
 }
 
-nav .navbar-nav li a{
+.nav-link {
     color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--cor-azul-claro) !important;
 }
 
 .cabecalho-imagem {
@@ -40,18 +49,14 @@ nav .navbar-nav li a{
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 4rem;
-    color: #FFF2E7;
+    color: white;
 }
 
 .conteudo-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    color: #ECD6C4;
-}
-
-.conteudo-escrito-botao {
-    margin-top: 1rem;
+    color: white;
 }
 
 .margem-acima {
@@ -66,7 +71,7 @@ nav .navbar-nav li a{
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 1.5rem;
-    color: #FFF2EF;
+    color: white;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -75,7 +80,7 @@ nav .navbar-nav li a{
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
-    color: #ECD6C4;
+    color: white;
     text-align: center;
     margin-bottom: 1rem;
 }
