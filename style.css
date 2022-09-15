@@ -96,42 +96,83 @@ hr {
 
 /* Treino.html */
 
+.object-1 {
+    background-color: white;
+    border: black solid 1px;
+    height: 2rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.object-fundo-branco {
+    background-color: white;
+    width: 50%;
+}
+
+.borda-preto {
+    border: black solid 1px;
+}
+
+.borda-branco {
+    border: white solid 1px;
+}
+
 .section-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+
     background-color: #26a69a;
     border: black solid 1px;
     height: 13rem;
 }
 
 .section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+
     background-color: #66bb6a;
     border: black solid 1px;
     height: 13rem;
 }
 
 .section-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+
     background-color: #64dd17;
     border: black solid 1px;
     height: 13rem;
 }
 
-.object-1 {
-    background-color: white;
+.section-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+
+    background-color: #d84315;
     border: black solid 1px;
-    height: 2rem;
-    width: 10rem;
-    text-align: center;
+    height: 13rem;
 }
 
-.borda-1 {
-    border: black solid 1px;
+.tela-inteira {
+    border: black 1px solid;
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
-.altura-1 {
-    height: 100%;
-}
-
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .object-1 {
         width: 5rem;
     }
-}
+} */
