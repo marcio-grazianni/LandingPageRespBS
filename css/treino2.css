@@ -118,6 +118,8 @@
     font-weight: 600;
     color: var(--cor-branca);
     border-radius: 3.125rem;
+    padding: 1rem 2rem;
+    border: unset;
 }
 
 .botao:hover {

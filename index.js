@@ -31,3 +31,8 @@ function mensagem() {
 function pessoa_clicado(...params) {
     console.log(params);
 }
+
+function obterElementoPai() {
+    console.log(this);
+    console.log(this);
+}
