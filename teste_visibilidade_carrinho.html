@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .menu {
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            top: 0;
+            background-color: aquamarine;
+            z-index: 1;
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .borda {
+            border: 1px solid red;
+        }
+
+        .container1 {
+            margin-top: 80px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .container2 {
+            display: none;
+            color: white;
+            width: 150px;
+            height: 400px;
+            background-color: grey;
+        }
+
+        .container3 {
+            display: flex;
+            color: white;
+            width: 400px;
+            height: 600px;
+            background-color: blue;
+        }
+
+        .container4 {
+            display: flex;
+            color: white;
+            width: 400px;
+            height: 600px;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>Logo</li>
+                <li>Site</li>
+                <li><a onclick="carrinho2()">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container1 borda">
+        <div class="container2">Container 2</div>
+        <div class="container3">Container 3</div>
+        <div class="container4">Container 4</div>
+    </div>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="esconder()">Esconder</button>
+    <button onclick="carrinho1()">Carrinho</button>
+    <button onclick="carrinho2()">Carrinho2</button>
+    <button onclick="esconder_carrinho()">Esconder carrinho</button>
+
+    <script>
+        function mostrar(){
+            document.querySelector('.container3').style.display = 'flex';
+        }
+        function esconder(){
+            document.querySelector('.container3').style.display = 'none';
+        }
+        function carrinho1(){
+            document.querySelector('.container2').style.display = 'block';
+            document.querySelector('.container2').style.position = 'absolute';
+            document.querySelector('.container2').style.left = '700px';
+            document.querySelector('.container2').style.top = '85px';
+        }
+        function carrinho2(){
+            document.querySelector('.container2').style.display = 'block';
+            document.querySelector('.container2').style.position = 'fixed';
+            document.querySelector('.container2').style.left = '700px';
+            document.querySelector('.container2').style.top = '85px';
+        }
+        function esconder_carrinho(){
+            document.querySelector('.container2').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
