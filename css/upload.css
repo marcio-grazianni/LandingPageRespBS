@@ -1,0 +1,174 @@
+/* Reseta o css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.menu-branco {
+    color: white !important;
+}
+
+.menu {
+    background-color: var(--cor-fundo-menu);
+}
+
+.menu-titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.menu-div-opcoes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-div-opcoes-menus {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menu-div-opcoes-menus-entrar-cadastre-se {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.secao1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    /* height: 20rem; */
+    /* border: 1px solid black; */
+}
+
+.secao1-bloco {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+    /* border: 1px solid black; */
+}
+
+.secao1-bloco-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 9.375rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 2rem 1rem 2rem 1rem;
+    /* border: 1px solid black; */
+}
+
+:root {
+    --cor-branca: white;
+    --cor-preta: black;
+
+    --cor-fundo-menu: #3f51b5;
+
+    --cor-botao-azul: #1976D2;
+    --cor-botao-azul-borda: #0D47A1;
+    --cor-botao-azul-hover: #2196F3;
+
+    --cor-botao-vermelho: #D32F2F;
+    --cor-botao-vermelho-borda: #B71C1C;
+    --cor-botao-vermelho-hover: #F44336;
+
+    --cor-botao-laranja: #e64a19;
+    --cor-botao-laranja-borda: #bf360c;
+    --cor-botao-laranja-hover: #ff5722;
+
+    --cor-botao-verde: #388e3c;
+    --cor-botao-verde-borda: #1b5e20;
+    --cor-botao-verde-hover: #4caf50;
+
+    --cor-botao-branco: var(--cor-branca);
+    --cor-botao-branco-borda: #bdbdbd;
+    --cor-botao-branco-hover: #eeeeee;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-branca);
+    border-radius: 3.125rem;
+    padding: 1rem 2rem;
+    border: unset;
+}
+
+.botao:hover {
+    color: var(--cor-branca);
+}
+
+.botao-azul {
+    background-color: var(--cor-botao-azul);
+    border-bottom: 4px solid var(--cor-botao-azul-borda);
+}
+
+.botao-azul:hover {
+    background-color: var(--cor-botao-azul-hover);
+}
+
+.botao-vermelho {
+    background-color: var(--cor-botao-vermelho);
+    border-bottom: 4px solid var(--cor-botao-vermelho-borda);
+}
+
+.botao-vermelho:hover {
+    background-color: var(--cor-botao-vermelho-hover);
+}
+
+.botao-laranja {
+    background-color: var(--cor-botao-laranja);
+    border-bottom: 4px solid var(--cor-botao-laranja-borda);
+}
+
+.botao-laranja:hover {
+    background-color: var(--cor-botao-laranja-hover);
+}
+
+.botao-verde {
+    background-color: var(--cor-botao-verde);
+    border-bottom: 4px solid var(--cor-botao-verde-borda);
+}
+
+.botao-verde:hover {
+    background-color: var(--cor-botao-verde-hover);
+}
+
+.botao-branco {
+    background-color: var(--cor-botao-branco);
+    border-bottom: 4px solid var(--cor-botao-branco-borda);
+    color: var(--cor-preta);
+}
+
+.botao-branco:hover {
+    background-color: var(--cor-botao-branco-hover);
+    color: var(--cor-preta);
+}
