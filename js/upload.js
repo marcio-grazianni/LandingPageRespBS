@@ -7,6 +7,8 @@ window.onload = (event) => {
 
 
 async function handleFileInputChange(event) {
+    console.clear();
+
     const file = event.target.files[0];
     if (!file) {
         console.log('Nenhum arquivo selecionado.');
