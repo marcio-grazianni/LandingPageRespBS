@@ -79,9 +79,6 @@ body {
     flex-wrap: wrap;
     padding-top: 3rem;
     padding-bottom: 3rem;
-
-    /* height: 20rem; */
-    /* border: 1px solid black; */
 }
 
 .secao1-bloco {
@@ -91,8 +88,6 @@ body {
     align-items: center;
     margin-left: 2rem;
     margin-bottom: 2rem;
-
-    /* border: 1px solid black; */
 }
 
 .secao1-bloco-div {
@@ -177,7 +172,6 @@ body {
     gap: 1rem;
 
     padding: 2rem;
-    /* border: 2px solid black; */
 }
 
 .content-file {
@@ -189,5 +183,4 @@ body {
     border: 1px solid darkgrey;
     border-radius: 0.3rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    /* border: 2px solid blue; */
 }

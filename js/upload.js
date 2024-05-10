@@ -5,6 +5,12 @@ window.onload = (event) => {
     document.getElementById('fileInput').addEventListener('change', handleFileInputChange);
 };
 
+function escapeHTML(html) {
+    var text = document.createTextNode(html);
+    var div = document.createElement('div');
+    div.appendChild(text);
+    return div.innerHTML;
+}
 
 async function handleFileInputChange(event) {
     console.clear();
@@ -26,7 +32,9 @@ async function processFileLineByLine(file) {
     const decoder = new TextDecoderStream();
     const lineStream = file.stream().pipeThrough(decoder).pipeThrough(new TransformStream(new LineBreakTransformer()));
     const reader = lineStream.getReader();
+    const contentFileText = document.getElementById('contentFileText');
     const contentFile = document.getElementById('contentFile');
+    contentFileText.textContent = '';
     contentFile.innerHTML = '';
 
     while (true) {
@@ -36,6 +44,7 @@ async function processFileLineByLine(file) {
         }
         // Aqui você tem cada linha disponível como `value`
         if (value.trim() !== '') {
+            contentFileText.innerHTML += escapeHTML(value) + '<br>';
             contentFile.innerHTML += `${value}<br>`;
             // console.log(value);
         }
