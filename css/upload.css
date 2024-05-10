@@ -6,6 +6,39 @@
     text-decoration: none;
 }
 
+:root {
+    --cor-branca: white;
+    --cor-preta: black;
+
+    --cor-fundo-menu: #3f51b5;
+    --cor-fundo: #EDF8FF;
+
+    --cor-botao-azul: #1976D2;
+    --cor-botao-azul-borda: #0D47A1;
+    --cor-botao-azul-hover: #2196F3;
+
+    --cor-botao-vermelho: #D32F2F;
+    --cor-botao-vermelho-borda: #B71C1C;
+    --cor-botao-vermelho-hover: #F44336;
+
+    --cor-botao-laranja: #e64a19;
+    --cor-botao-laranja-borda: #bf360c;
+    --cor-botao-laranja-hover: #ff5722;
+
+    --cor-botao-verde: #388e3c;
+    --cor-botao-verde-borda: #1b5e20;
+    --cor-botao-verde-hover: #4caf50;
+
+    --cor-botao-branco: var(--cor-branca);
+    --cor-botao-branco-borda: #bdbdbd;
+    --cor-botao-branco-hover: #eeeeee;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+}
+
 .menu-branco {
     color: white !important;
 }
@@ -68,44 +101,6 @@
     flex-wrap: wrap;
     text-align: center;
     width: 9.375rem;
-}
-
-.botoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-    padding: 2rem 1rem 2rem 1rem;
-    /* border: 1px solid black; */
-}
-
-:root {
-    --cor-branca: white;
-    --cor-preta: black;
-
-    --cor-fundo-menu: #3f51b5;
-
-    --cor-botao-azul: #1976D2;
-    --cor-botao-azul-borda: #0D47A1;
-    --cor-botao-azul-hover: #2196F3;
-
-    --cor-botao-vermelho: #D32F2F;
-    --cor-botao-vermelho-borda: #B71C1C;
-    --cor-botao-vermelho-hover: #F44336;
-
-    --cor-botao-laranja: #e64a19;
-    --cor-botao-laranja-borda: #bf360c;
-    --cor-botao-laranja-hover: #ff5722;
-
-    --cor-botao-verde: #388e3c;
-    --cor-botao-verde-borda: #1b5e20;
-    --cor-botao-verde-hover: #4caf50;
-
-    --cor-botao-branco: var(--cor-branca);
-    --cor-botao-branco-borda: #bdbdbd;
-    --cor-botao-branco-hover: #eeeeee;
 }
 
 .botao {
@@ -171,4 +166,28 @@
 .botao-branco:hover {
     background-color: var(--cor-botao-branco-hover);
     color: var(--cor-preta);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 2rem;
+    /* border: 2px solid black; */
+}
+
+.content-file {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid darkgrey;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    /* border: 2px solid blue; */
 }

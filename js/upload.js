@@ -26,6 +26,8 @@ async function processFileLineByLine(file) {
     const decoder = new TextDecoderStream();
     const lineStream = file.stream().pipeThrough(decoder).pipeThrough(new TransformStream(new LineBreakTransformer()));
     const reader = lineStream.getReader();
+    const contentFile = document.getElementById('contentFile');
+    contentFile.innerHTML = '';
 
     while (true) {
         const { value, done } = await reader.read();
@@ -33,7 +35,10 @@ async function processFileLineByLine(file) {
             break;
         }
         // Aqui você tem cada linha disponível como `value`
-        console.log(value);
+        if (value.trim() !== '') {
+            contentFile.innerHTML += `${value}<br>`;
+            // console.log(value);
+        }
     }
 }
 
